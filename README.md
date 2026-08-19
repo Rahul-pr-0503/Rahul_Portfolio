@@ -36,7 +36,7 @@ rahul = {
         "SQL",
         "System Fundamentals"
     ],
-    "graduation": 2026
+    "graduation": 2027
 }
 ```
 
