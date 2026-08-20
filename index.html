@@ -1172,7 +1172,7 @@
 
     <p class="subhead">
       Python developer and final-year AI/ML student building production-oriented
-      software across backend development, machine learning, desktop automation,
+      software across backend development, machine learning, intelligent desktop automation,
       and full-stack applications.
     </p>
 
@@ -1232,7 +1232,7 @@
 
         <p>
           What drives me is building things that solve real problems:
-          a voice-controlled desktop assistant that automates system tasks,
+          an adaptive desktop assistant that combines voice automation with ML-based intent routing,
           a model that recommends fertilizers from soil and environmental data,
           and an e-commerce platform that helps independent sellers manage products
           and orders.
@@ -1323,8 +1323,8 @@
       </div>
 
       <div class="stat">
-        <div class="stat-num" data-target="88" data-suffix="%">0</div>
-        <div class="stat-label">GreenGrow Accuracy</div>
+        <div class="stat-num" data-target="90" data-suffix="%">0</div>
+        <div class="stat-label">NeuroDesk Intent Accuracy</div>
       </div>
     </div>
   </section>
@@ -1497,63 +1497,70 @@
       </p>
     </div>
 
-    <!-- Point 2: renamed AI_Based_OS more accurately -->
+    <!-- PROJECT 1: AI Desktop Assistant / NeuroDesk -->
     <article class="project-case hero-proj reveal">
       <div class="proj-tag">
         <span class="hero-badge">Hero Project</span>
-        Desktop Automation / Voice Interfaces
+        Desktop Automation / Intent Classification
       </div>
 
-      <h3 class="proj-title">AI Desktop Assistant</h3>
+      <h3 class="proj-title">AI Desktop Assistant — NeuroDesk</h3>
 
       <p class="proj-tagline">
-        A voice-controlled desktop automation system that converts text and
-        speech commands into system actions while monitoring device health.
+        An adaptive voice- and text-controlled desktop automation system with
+        hybrid intent routing, indexed file search, system control, and real-time
+        resource monitoring.
       </p>
 
-      <div class="cover-ph coming-soon">
-        <div class="coming-content">
-          <div class="coming-icon">🚀</div>
-          <h2>Coming Soon</h2>
-          <p>AI Desktop Assistant demo will be available here.</p>
-        </div>
+      <div class="cover-ph">
+          <img
+            src="NeuroDesk.png"
+            alt="NeuroDesk Adaptive AI Desktop Assistant dashboard showing hybrid ML routing and system resource monitoring"
+          >
       </div>
 
       <div class="proj-cols">
         <div class="proj-block">
           <h4>Problem</h4>
           <p>
-            Everyday desktop tasks such as opening applications, launching files,
-            accessing browser tools, and checking system health still require
-            repeated manual navigation.
+            Desktop workflows often require repeated manual navigation for
+            launching applications, locating files, managing system utilities,
+            and checking resource usage. A useful assistant also needs to
+            understand different command styles reliably without depending on
+            a single routing method.
           </p>
         </div>
 
         <div class="proj-block">
           <h4>Solution</h4>
           <p>
-            Built a Python desktop assistant combining speech recognition,
-            command parsing, auto-correction, and system automation to execute
-            voice and text commands while monitoring CPU, RAM, disk, and battery
-            usage in the background.
+            Developed NeuroDesk as an adaptive Python desktop assistant supporting
+            both text and voice commands. Built a hybrid intent-routing pipeline
+            that combines deterministic rules with TF-IDF and Logistic Regression
+            to classify user commands and route them to the correct automation task.
           </p>
         </div>
       </div>
 
       <div class="metrics-inline">
         <div class="metric-block">
-          <div class="m-num">25+</div>
-          <div class="m-lbl">Voice Commands</div>
+          <div class="m-num">90%</div>
+          <div class="m-lbl">Intent Accuracy</div>
         </div>
 
         <div class="metric-block">
-          <div class="m-num">4</div>
-          <div class="m-lbl">Metrics Monitored</div>
+          <div class="m-num">15</div>
+          <div class="m-lbl">Command Categories</div>
         </div>
 
         <div class="metric-block">
-          <div class="m-num">Low</div>
-          <div class="m-lbl">Resource Footprint</div>
+          <div class="m-num">6</div>
+          <div class="m-lbl">System Metrics</div>
+        </div>
+
+        <div class="metric-block">
+          <div class="m-num">3</div>
+          <div class="m-lbl">Adaptive Modes</div>
         </div>
       </div>
 
@@ -1561,32 +1568,52 @@
         <h4>Key Features</h4>
 
         <div class="feature-chips">
-          <span class="chip">Voice Recognition</span>
-          <span class="chip">Command Parsing</span>
-          <span class="chip">Auto-Correction</span>
-          <span class="chip">App / File / Browser Launching</span>
+          <span class="chip">Text &amp; Voice Commands</span>
+          <span class="chip">Hybrid Intent Routing</span>
+          <span class="chip">TF-IDF Classification</span>
+          <span class="chip">Logistic Regression</span>
+          <span class="chip">Application Launch / Close</span>
+          <span class="chip">Indexed File Search</span>
+          <span class="chip">System Utilities</span>
           <span class="chip">CPU Monitoring</span>
           <span class="chip">RAM Monitoring</span>
           <span class="chip">Disk Monitoring</span>
           <span class="chip">Battery Monitoring</span>
+          <span class="chip">Disk I/O Monitoring</span>
+          <span class="chip">Process Memory Monitoring</span>
+          <span class="chip">Balanced Mode</span>
+          <span class="chip">Performance Mode</span>
+          <span class="chip">Power-Save Mode</span>
           <span class="chip">Multi-threaded Execution</span>
         </div>
       </div>
 
       <div class="proj-cols">
         <div class="proj-block">
-          <h4>Challenges</h4>
+          <h4>Architecture</h4>
           <ul>
-            <li>Handling noisy or partial speech input without misfiring commands.</li>
-            <li>Keeping background monitoring responsive without blocking foreground tasks.</li>
+            <li>
+              Uses deterministic rules for predictable system commands and
+              machine-learning classification for more flexible user phrasing.
+            </li>
+            <li>
+              TF-IDF converts command text into numerical features while
+              Logistic Regression predicts one of 15 intent categories.
+            </li>
           </ul>
         </div>
 
         <div class="proj-block">
-          <h4>Lessons Learned</h4>
+          <h4>System Intelligence</h4>
           <ul>
-            <li>Threading and task separation are essential for responsive desktop applications.</li>
-            <li>Intent-level correction improves voice-command usability beyond basic spelling correction.</li>
+            <li>
+              Tracks CPU, RAM, disk, battery, disk-I/O, and process-memory usage
+              in real time using psutil.
+            </li>
+            <li>
+              Supports Balanced, Performance, and Power-Save operating modes
+              for adaptive resource behavior.
+            </li>
           </ul>
         </div>
       </div>
@@ -1594,12 +1621,16 @@
       <div class="tech-row">
         <span class="tech-pill">Python</span>
         <span class="tech-pill">Tkinter</span>
+        <span class="tech-pill">Scikit-learn</span>
+        <span class="tech-pill">TF-IDF</span>
+        <span class="tech-pill">Logistic Regression</span>
         <span class="tech-pill">SpeechRecognition</span>
-        <span class="tech-pill">PyAudio</span>
+        <span class="tech-pill">SoundDevice</span>
         <span class="tech-pill">SQLite</span>
         <span class="tech-pill">psutil</span>
         <span class="tech-pill">Threading</span>
-        <span class="tech-pill">OS Automation</span>
+        <span class="tech-pill">Windows Automation</span>
+        <span class="tech-pill">Git/GitHub</span>
       </div>
 
       <div class="proj-actions">
@@ -1607,10 +1638,21 @@
           type="button"
           class="btn btn-ghost architecture-btn"
           data-image="ai-based-os-architecture.png"
-          data-title="AI Desktop Assistant — System Architecture"
+          data-title="NeuroDesk — System Architecture"
         >
           Architecture Diagram
         </button>
+
+        <!-- Add your NeuroDesk GitHub repository URL here when available:
+        <a
+          href="YOUR_NEURODESK_GITHUB_URL"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost"
+        >
+          GitHub Repo ↗
+        </a>
+        -->
       </div>
     </article>
 
